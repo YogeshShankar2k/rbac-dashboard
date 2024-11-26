@@ -1,70 +1,131 @@
-# Getting Started with Create React App
+# Role-Based Access Control (RBAC) Dashboard
+A web application to manage users, roles, and permissions dynamically. This project demonstrates a functional and user-friendly interface for implementing Role-Based Access Control (RBAC), essential for secure user management in modern applications.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
+User Management:
 
-## Available Scripts
+### View, add, edit, and delete users.
+Assign roles to users and toggle their active/inactive status.
+Role Management:
 
-In the project directory, you can run:
+### Create, edit, and delete roles.
+Assign permissions to roles dynamically.
+## Permission Management:
 
-### `npm start`
+Manage permissions for roles, including Read, Write, Delete, and more.
+Display permissions in a clean and editable tabular format.
+##Responsive Design:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Fully responsive layout for seamless usage across devices (desktop, tablet, mobile).
+##Mock API Integration (Optional):
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Simulate CRUD operations for users and roles with mock API responses.
+User Experience Enhancements:
 
-### `npm test`
+Smooth interactions with feedback for actions.
+Search and filter functionality for easier management.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
+### Frontend:
+* React.js (Functional Components & Hooks)
 
-### `npm run build`
+* Material-UI for styling and components
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* State Management:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* React useState and Context API
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Additional Tools:
 
-### `npm run eject`
+* React Router for navigation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Mock APIs for CRUD operations (optional)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Getting Started
+## 1. Prerequisites
+* Ensure you have the following installed on your system:
 
-## Learn More
+* Node.js (version 16 or higher)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* npm (comes with Node.js)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 2. Clone the Repository
+* bash or cmd
 
-### Code Splitting
+* Copy code
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* git clone "https://github.com/YogeshShankar2k/rbac-dashboard.git"
 
-### Analyzing the Bundle Size
+* cd rbac-dashboard
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 3. Install Dependencies
+Run the following command to install all required dependencies:
 
-### Making a Progressive Web App
+* bash or cmd
+  
+* Copy code
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* "npm install"
+  
+## 4. Start the Development Server
+### Start the application in development mode:
 
-### Advanced Configuration
+* bash or cmd
+  
+* Copy code
+  
+* "npm start"
+  
+* The application will open in your default browser at http://localhost:3000.
+  
+### Start the json-server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* Start the application in development mode:
 
-### Deployment
+* bash or cmd
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+* cd src file(\rbac-dashboard\src>) 
+  
+* Copy code
 
-### `npm run build` fails to minify
+* "npx json-server --watch mockData.js"
+  
+* The application json data will run on at http://localhost:3001.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# How to Add Features
+* Add New Permissions:
+
+* Update the availablePermissions array in the RoleManagement.js file.
+
+# Add API Integration:
+
+* Replace the mock API logic in UserManagement and RoleManagement with actual API endpoints.
+Enhance Design:
+
+* Use Material-UI themes or custom CSS for additional styling.
+
+# Known Issues
+
+* Some edge cases for permission conflicts might require additional validation.
+* Mock API does not persist data across reloads.
+
+# Future Enhancements
+
+* Implement role inheritance (e.g., a role can inherit permissions from another role).
+  
+* Integrate a backend API for real data persistence.
+  
+* Add sorting and advanced filtering for user and role tables.
+
+# Contributing
+
+* Contributions are welcome! Feel free to fork this repository, create a new branch, and submit a pull request with your changes.
+
+ # Screenshots
+Include screenshots or GIFs of the application to demonstrate its functionality. Here's an example:
+
+![image](https://github.com/user-attachments/assets/4fadc0cb-17e8-4317-96a8-5d70c0393f45)
+
+![image](https://github.com/user-attachments/assets/774cd7f8-5f6f-4122-8098-619eabe4c22f)
