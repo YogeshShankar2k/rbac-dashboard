@@ -1,10 +1,47 @@
 {
   "users": [
-    { "id": 1, "name": "Alice", "role": "Admin", "status": "Active" },
-    { "id": 2, "name": "Bob", "role": "Editor", "status": "Inactive" }
+    {
+      "name": "Alices",
+      "role": "Admins",
+      "id": "1"
+    },
+    {
+      "name": "Bobs",
+      "role": "Editors",
+      "id": "2"
+    },
+    {
+      "id": "c109",
+      "name": "Yogesh",
+      "role": "Editor"
+    }
   ],
   "roles": [
-    { "id": 1, "name": "Admin", "permissions": ["Read", "Write", "Delete"] },
-    { "id": 2, "name": "Editor", "permissions": ["Read", "Write"] }
+    {
+      "name": "Admins",
+      "permissions": [
+        "Read",
+        "Write",
+        "Delete",
+        "Put"
+      ],
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Editor",
+      "permissions": [
+        "Read",
+        "Write"
+      ]
+    },
+    {
+      "id": "7a3a",
+      "name": "Editor",
+      "permissions": [
+        "Text",
+        "Values"
+      ]
+    }
   ]
 }
