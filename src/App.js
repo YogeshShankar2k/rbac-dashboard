@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Sidebar from "./components/Sidebar";
+import UserManagement from "./components/UserManagement";
+import RoleManagement from "./components/RoleManagement";
+import { Box } from "@mui/material";
 
-function App() {
+const App = () => {
+  const [currentPage, setCurrentPage] = useState("users");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box sx={{ display: "flex" }}>
+      <Sidebar onNavigate={setCurrentPage} />
+      <Box sx={{ flexGrow: 1, padding: 3 }}>
+        {currentPage === "users" && <UserManagement />}
+        {currentPage === "roles" && <RoleManagement />}
+      </Box>
+    </Box>
   );
-}
+};
 
 export default App;
