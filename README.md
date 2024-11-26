@@ -126,6 +126,7 @@ Enhance Design:
  # Screenshots
 Include screenshots or GIFs of the application to demonstrate its functionality. Here's an example:
 
-![image](https://github.com/user-attachments/assets/4fadc0cb-17e8-4317-96a8-5d70c0393f45)
+![image](https://github.com/user-attachments/assets/fd70e44c-dd08-4546-8f06-9b1685e82c2e)
 
-![image](https://github.com/user-attachments/assets/774cd7f8-5f6f-4122-8098-619eabe4c22f)
+![image](https://github.com/user-attachments/assets/9c22b2d5-8ae6-4fc0-8a2a-46f18c383575)
+
