@@ -90,7 +90,7 @@ Run the following command to install all required dependencies:
   
 * Copy code
 
-* "npx json-server --watch mockData.js"
+* "npx json-server --watch mockData.json"
   
 * The application json data will run on at http://localhost:3001.
 
